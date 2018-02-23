@@ -1,6 +1,7 @@
 package main
 
 import (
+	"context"
 	"crypto/sha256"
 	"encoding/csv"
 	"flag"
@@ -14,9 +15,6 @@ import (
 
 	"cloud.google.com/go/spanner"
 	"cloud.google.com/go/spanner/admin/database/apiv1"
-
-	"golang.org/x/net/context"
-
 	"github.com/pborman/uuid"
 )
 
